@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pservice.manas.busservice.EditProfileActivity"
+    tools:showIn="@layout/activity_edit_profile">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/edp_name"
+        android:inputType="text"
+        android:background="@color/white"
+        android:hint="Full Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/edp_bno"
+        android:padding="10dp"
+        android:inputType="text"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@+id/edp_name"
+        android:background="@color/white"
+        android:hint="Bus No."/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/edp_pass"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_below="@+id/edp_bno"
+        android:background="@color/white"
+        android:hint="Password."/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/edp_stops"
+        android:padding="10dp"
+        android:lines="4"
+        android:gravity="top"
+        android:layout_below="@+id/edp_pass"
+        android:background="@color/white"
+        android:hint="Stops"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:id="@+id/edp_btn_signup"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

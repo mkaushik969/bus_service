@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    android:gravity="bottom"
+    android:background="@drawable/bus_back"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pservice.manas.busservice.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/la_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/la_iv"
+        android:padding="10dp"
+        android:id="@+id/la_pno"
+        android:inputType="phone"
+        android:background="@color/white"
+        android:hint="Bus No."/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/la_pwd"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_below="@+id/la_pno"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle_background"
+        android:id="@+id/la_login_btn"
+        android:layout_below="@+id/la_pwd"
+        android:text="Login"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/la_round_tv"
+        android:layout_above="@+id/la_signup_btn"
+        android:layout_below="@+id/la_login_btn"
+        android:background="@drawable/line_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/la_login_btn"
+        android:id="@+id/la_round_tv"
+        android:text="OR"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/la_round_tv"
+        android:layout_above="@+id/la_signup_btn"
+        android:layout_below="@+id/la_login_btn"
+        android:background="@drawable/line_background"
+        android:id="@+id/textView" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/la_signup_btn"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle_background"
+        android:layout_below="@+id/la_round_tv"
+        android:text="Signup"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/la_signup_btn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="Don't have an account, Signup here"/>
+
+
+
+</RelativeLayout>

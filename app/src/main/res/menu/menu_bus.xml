@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pservice.manas.busservice.BusActivity">
+    <item
+        android:id="@+id/menu_bus_edp"
+        android:orderInCategory="100"
+        android:title="Edit Profile"
+        android:icon="@drawable/ic_edit_white_36dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_bus_logout"
+        android:orderInCategory="101"
+        android:title="Logout"
+        android:icon="@drawable/ic_exit_to_app_white_36dp"
+        app:showAsAction="always" />
+</menu>
